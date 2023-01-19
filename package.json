@@ -1,0 +1,19 @@
+{
+  "name": "kalkulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.2.0",
+    "@hapi/inert": "^7.0.0",
+    "cors": "^2.8.5",
+    "jsdom": "^21.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

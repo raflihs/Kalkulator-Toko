@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Toko</title>
+</head>
+
+<body>
+    <div class="card">
+        <form id="display" class="display">
+            <input type="text" placeholder="0" id="screen">
+        </form>
+        <div class="tombol-atas">
+            <button class="tombol" onclick ="display('mc')">MC</button>
+            <button class="tombol" onclick ="display('mr')">MR</button>
+            <button class="tombol" onclick ="display('m-')">M-</button>
+            <button class="tombol" onclick ="display('m+')">M+</button>
+        </div>
+        <section class="button">
+            <div class="tombol-kiri">
+                <button class="tombol" onclick ="display('clear')">AC</button>
+                <button class="tombol" onclick ="display('plus-minus')">&#177;</button>
+                <button class="tombol" onclick ="display('')"></button>
+                <button class="tombol" onclick ="display('')" onclick ="display()"></button>
+            </div>
+            <div class="tombol-tengah">
+                <script>
+                    for (let index = 1; index < 10; index++) {
+                        document.write(`<button class="tombol" onclick =display(${index})>` + index + `</button>`);
+                    }
+                </script>
+                <button class="tombol" onclick ="display('0')">0</button>
+                <button class="tombol" onclick ="display('00')">00</button>
+                <button class="tombol" onclick ="display('.')">.</button>
+            </div>
+            <div class="tombol-kanan">
+                <button class="tombol" onclick ="display('del')">DEL</button>
+                <button class="tombol" onclick ="display('%')">%</button>
+                <button class="tombol" onclick ="display('akar')">&#8730;</button>
+                <button class="tombol" onclick ="display('*')">&#215;</button>
+                <button class="tombol" onclick ="display('/')">&#247;</button>
+                <button class="tombol" onclick ="display('-')">-</button>
+                <button class="tombol" onclick ="display('+')">+</button>
+                <button class="tombol" onclick ="display('=')">=</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
